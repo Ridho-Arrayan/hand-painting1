@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ml5.js handPose Webcam Example</title>
+    
+    <!-- Pustaka p5.js dan ml5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+
+    <style>
+      /* Atur margin dan padding body dan html agar tidak ada ruang kosong */
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000; /* Warna latar belakang */
+      }
+
+      /* Kontainer untuk video webcam */
+      video {
+        width: 100%;  /* Membuat video responsif sesuai dengan lebar layar */
+        height: 100%; /* Membuat video responsif sesuai dengan tinggi layar */
+        object-fit: cover; /* Agar video tetap mengisi layar tanpa distorsi */
+        position: absolute; /* Memastikan video tetap berada di atas */
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="sketch.js"></script> <!-- Skrip JavaScript terpisah untuk handpose -->
+  </body>
+</html>
